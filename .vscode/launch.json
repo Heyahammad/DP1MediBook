@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/faisalahammad/Downloads/NecessaryCodes_For_Part1/master-worker",
+      "program": "/Users/faisalahammad/Downloads/NecessaryCodes_For_Part1/master-worker/build/Debug/outDebug"
+    }
+  ]
+}

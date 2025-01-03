@@ -8,13 +8,11 @@ function Header() {
 
   const scrollToSection = () => {
     sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    // Optional: Adjust for fixed header offset
-    window.scrollBy(0, 715); // Adjust -80 to match your header height
+    window.scrollBy(0, 715); 
   };
 
   return (
     <div className="flex flex-col md:flex-row flex-wrap bg-primary rounded-lg px-6 md:px-10 lg:px-20">
-      {/* Left Section */}
       <div className="md:w-1/2 flex flex-col items-center md:items-start justify-center gap-4 py-10 md:py-[10vw]">
         <p className="text-3xl md:text-5xl lg:text-6xl text-white md-8 font-semibold leading-tight text-center md:text-left">
           Simplifying Care, <br className="hidden sm:block" />
@@ -40,7 +38,6 @@ function Header() {
         </a>
       </div>
 
-      {/* Right Section */}
       <div className="md:w-1/2 relative mt-6 md:mt-0">
         <img
           className="w-full md:absolute bottom-0 h-auto rounded-lg"

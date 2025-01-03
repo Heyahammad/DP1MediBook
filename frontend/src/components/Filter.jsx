@@ -10,7 +10,6 @@ function Filter({ initialFilters = {} }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Pre-fill the inputs if initialFilters is provided
     if (initialFilters.type) setType(initialFilters.type);
     if (initialFilters.area) setArea(initialFilters.area);
     if (initialFilters.fee) setFee(initialFilters.fee);
@@ -25,7 +24,6 @@ function Filter({ initialFilters = {} }) {
       return matchesType && matchesArea && matchesFee;
     });
 
-    // Navigate to Doctors.jsx and pass filters and results via state
     navigate("/doctors", {
       state: {
         filteredDoctors,

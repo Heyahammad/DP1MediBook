@@ -51,7 +51,6 @@ const About = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-10 pb-6 justify-center items-center">
-        {/* Efficiency Box */}
         <div className="bg-white shadow-lg rounded-lg border border-gray-200 p-8 w-full md:w-1/3 text-center hover:bg-primary transition-all duration-300 group">
           <div className="mb-4">
             <FaBolt className="text-4xl text-primary group-hover:text-white transition-all duration-300" />
@@ -65,7 +64,6 @@ const About = () => {
           </p>
         </div>
 
-        {/* Convenience Box */}
         <div className="bg-white shadow-lg rounded-lg border border-gray-200 p-8 w-full md:w-1/3 text-center hover:bg-primary transition-all duration-300 group">
           <div className="mb-4">
             <FaGlobe className="text-4xl text-primary group-hover:text-white transition-all duration-300" />
@@ -79,7 +77,6 @@ const About = () => {
           </p>
         </div>
 
-        {/* Personalization Box */}
         <div className="bg-white shadow-lg rounded-lg border border-gray-200 p-8 w-full md:w-1/3 text-center hover:bg-primary transition-all duration-300 group">
           <div className="mb-4">
             <FaBullseye className="text-4xl text-primary group-hover:text-white transition-all duration-300" />

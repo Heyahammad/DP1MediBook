@@ -12,7 +12,6 @@ const Footer = () => {
   return (
     <div className="bg-primary2 text-offwhite py-12 border-t border-gray-200">
       <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-3 gap-10">
-        {/* Left Section */}
         <div className="flex flex-col items-center sm:items-start">
           <img className="mb-5 w-40" src={assets.logowhite} alt="MediBook Logo" />
           <p className="text-offwhite text-center sm:text-left text-sm">
@@ -24,7 +23,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Center Section */}
         <div className="text-center sm:text-left">
           <p className="text-xl font-semibold mb-5 text-offwhite">COMPANY</p>
           <ul className="flex flex-col gap-3 text-offwhite">
@@ -43,7 +41,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Right Section */}
         <div className="text-center sm:text-left">
           <p className="text-xl font-semibold mb-5 text-offwhite">
             GET IN TOUCH
@@ -79,7 +76,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright Section */}
       <div className="mt-12 border-t border-offwhite pt-6">
         <p className="text-center text-sm text-offwhite">
           Copyright 2024 @heyahammad - All Rights Reserved.

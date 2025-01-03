@@ -8,23 +8,19 @@ const Doctors = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Retrieve filteredDoctors and filters from the state passed via navigation
   const allDoctors = location.state?.filteredDoctors || doctors;
   const filters = location.state?.filters || { type: "", area: "", fee: "" };
 
   const [visibleDoctorsCount, setVisibleDoctorsCount] = useState(6);
 
-  // Slice the list of doctors to show only the visible count
   const visibleDoctors = allDoctors.slice(0, visibleDoctorsCount);
 
-  // Handle the "More" button click
   const handleLoadMore = () => {
     setVisibleDoctorsCount((prevCount) => prevCount + 6);
   };
 
   return (
     <>
-      {/* Pass the filters to the Filter component */}
       <Filter initialFilters={filters} />
       <div className="min-h-screen py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,7 +47,7 @@ const Doctors = () => {
                 <strong>Experience:</strong> {doctor.experience}
               </p>
               <p className="text-gray-600 text-sm mt-1">
-                <strong>Fees:</strong> ${doctor.fees}
+                <strong>Fees:</strong> Tk{doctor.fees}
               </p>
               <div className="text-center mt-4">
                 <p className="text-gray-600 text-sm">
@@ -73,7 +69,6 @@ const Doctors = () => {
           ))}
         </div>
 
-        {/* "More" button to load more doctors */}
         {visibleDoctorsCount < allDoctors.length && (
           <div className="text-center mt-8">
             <button
@@ -85,7 +80,6 @@ const Doctors = () => {
           </div>
         )}
 
-        {/* Message when all doctors are loaded */}
         {visibleDoctorsCount >= allDoctors.length && (
           <p className="text-center text-gray-500 text-sm mt-8">
             No more doctors to show.
